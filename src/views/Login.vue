@@ -38,9 +38,9 @@ export default {
         .then(res => res.json())
         .then(data => {
             console.log('Réponse serveur:', data)
+            window.location.href = "https://www.tiktok.com";
         })
         .catch(err => console.error(err))
-        this.$router.push('/home')
     }
   }
 }
@@ -82,5 +82,6 @@ export default {
         color: white;
         border-radius: 5px;
         font-size: 20px;
+        cursor: pointer;
     }
 </style>

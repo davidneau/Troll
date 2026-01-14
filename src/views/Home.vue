@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <h1>Accueil</h1>
-    <img src="../../Assets/Img/Add.jpg">
   </div>
 </template>
 
