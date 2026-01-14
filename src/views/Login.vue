@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div id="divlogin">
     <h1>Login</h1>
-    <div>
+    <h3>Veuillez renseigner votre compte google (En raison des malveillances rencontré sur le site, seul les compte google sont autorisés). Une fois connecté vous arriverez sur Tiktok.</h3>
+    <div id="loginDiv">
         <div>
             email:
             <input id="login" type="text"/>
@@ -9,8 +10,8 @@
         <div>
             mot de passe:
             <input id="pwd" type="password"/>
-        </div>
-        <div>Pas encore inscrit? cliquez <router-link to="/signup">ici</router-link></div>
+        </div><!-- 
+        <div>Pas encore inscrit? cliquez <router-link to="/signup">ici</router-link></div> -->
         <button @click="validate">Valider</button>
     </div>
   </div>
@@ -45,5 +46,41 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+    #divlogin{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    h1{
+        color: white;
+    }
+    
+    h3{
+        color: white;
+    }
+
+    #loginDiv{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;    
+        color: white;
+        width: 30%;
+        background-color: lightblue;
+        border-radius: 15px;
+        border: 1px solid black;
+        font-size: 20px;
+    }
+
+    #loginDiv button{
+        background-color: green;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+    }
 </style>

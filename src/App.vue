@@ -30,4 +30,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+body {
+  background-image: url("../Assets/Img/fondecran.jpg");
+  background-size: cover;      /* l’image couvre tout l’écran */
+  background-position: center; /* centrée */
+  background-repeat: no-repeat;/* pas de répétition */
+  background-attachment: fixed;/* reste fixe au scroll (optionnel) */
+}
 </style>
